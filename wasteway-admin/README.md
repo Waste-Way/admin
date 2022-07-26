@@ -1,1 +1,1 @@
-## Waste Way Admin Dasboard
+## Waste Way Admin Dashboard
