@@ -5,6 +5,6 @@
 
 Waste Way Dashboard (React App) is the front-end for the entire Waste aWay platform. Built with:
 
-ReactJS
-react-chartjs-2
-Node.Js
+* ReactJS
+* react-chartjs-2
+* Node.Js
