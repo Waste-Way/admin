@@ -11,6 +11,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import MapIcon from "@mui/icons-material/MapsHomeWorkTwoTone";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import React,{ useContext } from "react";
@@ -42,22 +43,27 @@ const Sidebar = () => {
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>Products</span>
+              <span>Waste Classification</span>
             </li>
           </Link>
+          <Link to="/map" style={{ textDecoration: "none" }}>
           <li>
-            <CreditCardIcon className="icon" />
-            <span>Orders</span>
+            <MapIcon className="icon" />
+            <span>View Map</span>
           </li>
+          </Link>
           <li>
             <LocalShippingIcon className="icon" />
-            <span>Delivery</span>
+            <span>Pickups</span>
           </li>
+        
           <p className="title">USEFUL</p>
           <li>
             <InsertChartIcon className="icon" />
             <span>Stats</span>
           </li>
+          
+          
           <li>
             <NotificationsNoneIcon className="icon" />
             <span>Notifications</span>

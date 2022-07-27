@@ -4,6 +4,13 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import TrashIcon from "@mui/icons-material/Delete";
+import PhoneIcon from "@mui/icons-material/ContactPhone";
+
+
+
+
 import React from "react";
 
 const Widget = ({ type }) => {
@@ -32,11 +39,11 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "PICKUPS",
         isMoney: false,
-        link: "View all orders",
+        link: "View all pickups",
         icon: (
-          <ShoppingCartOutlinedIcon
+          <LocalShippingIcon
             className="icon"
             style={{
               backgroundColor: "rgba(218, 165, 32, 0.2)",
@@ -48,11 +55,11 @@ const Widget = ({ type }) => {
       break;
     case "earning":
       data = {
-        title: "EARNINGS",
-        isMoney: true,
-        link: "View net earnings",
+        title: "VOLUME OF WASTE (kg)",
+        isMoney: false,
+        link: "View waste volume by city",
         icon: (
-          <MonetizationOnOutlinedIcon
+          <TrashIcon
             className="icon"
             style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
           />
@@ -61,11 +68,11 @@ const Widget = ({ type }) => {
       break;
     case "balance":
       data = {
-        title: "BALANCE",
-        isMoney: true,
+        title: "PICKUP REQUESTS",
+        isMoney: false,
         link: "See details",
         icon: (
-          <AccountBalanceWalletOutlinedIcon
+          <PhoneIcon
             className="icon"
             style={{
               backgroundColor: "rgba(128, 0, 128, 0.2)",
